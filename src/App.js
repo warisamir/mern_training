@@ -13,7 +13,7 @@ function App() {
   const [res, setRes] = useState([]); 
 
   const fetchRequest = async() => {
-    const data = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${img}&client_id=${process.env.REACT_APP_API_KEY}`);
+    const data = await fetch(`https://api.unsplash.com/search/photos?page=1&query=${img}&client_id=$hRxPX5bEuY_eXLrpeOmBjHGWIO5g65QrEj-IPKjd2OM`);
     const dataJ = await data.json();
     const result = await dataJ.results;
     setRes(result);
